@@ -757,7 +757,7 @@ function abrirSede(sede) {
   document.getElementById('modalPill').textContent = `SEDE ${sede.nombre.toUpperCase()}`;
   document.getElementById('stripText').textContent = `Sport Club · Sede ${sede.nombre}`;
 
-  const src = `https://www.youtube.com/embed/${sede.videoId}?autoplay=1&mute=1&rel=0&modestbranding=1&playsinline=1&controls=1&loop=1&playlist=${sede.videoId}`;
+  const src = `https://www.youtube.com/embed/${sede.videoId}?autoplay=1&mute=1&rel=0&modestbranding=1&playsinline=1&controls=1`;
   document.getElementById('videoFrame').src = src;
 
   const msg = encodeURIComponent(`Hola! Pasé por la Sede ${sede.nombre}, escaneé el QR y me gustaría tener info para empezar 💪🚀`);
