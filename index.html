@@ -676,7 +676,7 @@
 // ══════════════════════════════════════
 //  CONFIG — editá solo esta sección
 // ══════════════════════════════════════
-const WP_NUM = "5493515733499";
+const WP_NUM = "5493518673333";
 
 const SEDES = [
   {
@@ -760,7 +760,7 @@ function abrirSede(sede) {
   const src = `https://www.youtube.com/embed/${sede.videoId}?autoplay=1&mute=1&rel=0&modestbranding=1&playsinline=1&controls=1`;
   document.getElementById('videoFrame').src = src;
 
-  const msg = encodeURIComponent(`Hola! Escaneé el QR de Sport Club sede ${sede.nombre} y quiero más info para empezar 💪`);
+  const msg = encodeURIComponent(`Hola! Pasé por la Sede ${sede.nombre}, escaneé el QR y me gustaría tener info para empezar 💪🚀`);
   document.getElementById('btnWP').href = `https://wa.me/${WP_NUM}?text=${msg}`;
 
   document.getElementById('modalOverlay').classList.add('active');
