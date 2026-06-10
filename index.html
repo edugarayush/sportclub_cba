@@ -684,7 +684,7 @@ const SEDES = [
     nombre: "Estrada",
     barrio: "Nueva Córdoba",
     icon: "🏋️",
-    videoId: "dQw4w9WgXcQ",  // ← ID YouTube real
+    videoId: "bELl2hhdyNk",  // ← ID YouTube real
     activa: true
   },
   {
@@ -692,7 +692,7 @@ const SEDES = [
     nombre: "Gauss",
     barrio: "Córdoba",
     icon: "⚡",
-    videoId: "dQw4w9WgXcQ",  // ← ID YouTube real
+    videoId: "1D3h3xlZLPI",  // ← ID YouTube real
     activa: true
   },
   {
@@ -700,7 +700,7 @@ const SEDES = [
     nombre: "Mendiolaza",
     barrio: "Mendiolaza",
     icon: "🌿",
-    videoId: "dQw4w9WgXcQ",  // ← ID YouTube real
+    videoId: "DtdHoU8ED7g",  // ← ID YouTube real
     activa: true
   },
   {
@@ -708,7 +708,7 @@ const SEDES = [
     nombre: "B. Talleres",
     barrio: "Barrio Talleres",
     icon: "🔥",
-    videoId: "dQw4w9WgXcQ",  // ← ID YouTube real
+    videoId: "uy8Tv6C0GbA",  // ← ID YouTube real
     activa: true
   },
   {
@@ -757,7 +757,7 @@ function abrirSede(sede) {
   document.getElementById('modalPill').textContent = `SEDE ${sede.nombre.toUpperCase()}`;
   document.getElementById('stripText').textContent = `Sport Club · Sede ${sede.nombre}`;
 
-  const src = `https://www.youtube.com/embed/${sede.videoId}?autoplay=1&mute=1&rel=0&modestbranding=1&playsinline=1&controls=1`;
+  const src = `https://www.youtube.com/embed/${sede.videoId}?autoplay=1&mute=1&rel=0&modestbranding=1&playsinline=1&controls=1&loop=1&playlist=${sede.videoId}`;
   document.getElementById('videoFrame').src = src;
 
   const msg = encodeURIComponent(`Hola! Pasé por la Sede ${sede.nombre}, escaneé el QR y me gustaría tener info para empezar 💪🚀`);
