@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
 <title>Sport Club Córdoba</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800;900&family=Barlow:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800;900&family=Barlow:wght@400;500;600;700&family=Montserrat:wght@900&display=swap');
 
 :root {
   --rojo: #CC1F26;
@@ -95,12 +95,30 @@ html,body { background:var(--negro); font-family:'Barlow',sans-serif; overflow-x
 .hero-title span { color:var(--rojo); }
 
 .hero-desc {
-  font-size:14px;
-  font-weight:400;
-  color:rgba(255,255,255,0.45);
-  line-height:1.6;
+  font-family:'Montserrat', 'Barlow Condensed', sans-serif;
+  font-size:15px;
+  font-weight:900;
+  color:var(--amarillo);
+  line-height:1.4;
   max-width:280px;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
 }
+
+.hero-ig {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:16px;
+  text-decoration:none;
+  color:rgba(255,255,255,0.55);
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:1px;
+  transition:color 0.15s;
+}
+.hero-ig svg { width:18px; height:18px; flex-shrink:0; }
+.hero-ig:active { color:white; }
 
 .hero-line {
   position:absolute;
@@ -433,7 +451,15 @@ html,body { background:var(--negro); font-family:'Barlow',sans-serif; overflow-x
   <section class="hero">
     <p class="hero-eyebrow">Bienvenido a la familia</p>
     <h1 class="hero-title">ELEGÍ<br>TU <span>SEDE</span></h1>
-    <p class="hero-desc">Escaneá el QR, mirá tu sede y escribinos para empezar hoy.</p>
+    <p class="hero-desc">Estás a un paso de formar parte de nuestra gran familia.</p>
+    <a class="hero-ig" href="https://www.instagram.com/sportclub_cordoba/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="white" stroke-width="1.8"/>
+        <circle cx="12" cy="12" r="4.5" stroke="white" stroke-width="1.8"/>
+        <circle cx="17.5" cy="6.5" r="1" fill="white"/>
+      </svg>
+      @sportclub_cordoba
+    </a>
     <div class="hero-line">SC</div>
   </section>
 
